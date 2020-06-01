@@ -18,6 +18,7 @@
 .footer span a {
     font-size: 0.7em;
     letter-spacing: 0.2px;
+    text-decoration: none;
 }
  
 .footer span a:hover {
