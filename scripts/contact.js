@@ -1,5 +1,17 @@
 $(window).on('load', () => {
     $(".container > p").css({padding: 0});
+    
+    var texts = ["Feedback", "Offer", "Suggestion", "Question", "Support", "Recommendation"];
+    var i = 0;
+
+    function changeText() {
+        $(".container > h1 > span").text(texts[i]);
+        if (i == 5) i = 0;
+        if (++i < texts.length){
+            setTimeout(changeText, 2000);
+        }
+    }
+
     changeText();
 });
 
@@ -24,16 +36,3 @@ $("form > button").on("click", (e) => {
         alert("We have received your message. Thank you!");                                    
     }
 });
-
-var texts = ["Feedback", "Offer", "Suggestion", "Question", "Support", "Recommendation"];
-var i = 0;
-
-function changeText() {
-    $(".container > h1 > span").text(texts[i]);
-    if (i == 5) i = 0;
-    if (++i < texts.length){
-        setTimeout(changeText, 2000);
-    }
-    console.log(i);
-}
-
