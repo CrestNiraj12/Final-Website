@@ -38,8 +38,8 @@ body {
 }
 
 form {
-    width: 25%;
-    margin: 0 37.5% 20% 37.5%;
+    width: 30%;
+    margin: 0 35% 20% 35%;
 }
 
 form > input {
@@ -87,4 +87,72 @@ form > button {
 form > button:hover {
     background: #fff;
     color: #000;
+}
+
+@media (max-width: 1200px) {
+    form {
+        width: 40%;
+        margin: 0 30% 20% 30%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container > p {
+        font-size: 2.5vw;
+    }
+    
+    .container > h1 {
+        font-size: 3vw;
+    }
+    
+    .container > h1 > span {
+        font-size: 3.25vw;
+    }
+    
+    form > button {
+        font-size: 1.2vw;
+        padding: 2% 8%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 15% 20%;
+    }
+    
+    .container > p {
+        font-size: 4vw;
+    }
+    
+    .container > h1 {
+        font-size: 5vw;
+    }
+    
+    .container > h1 > span {
+        font-size: 5.25vw;
+    }
+    
+    form {
+        width: 60%;
+        margin: 0 20% 40% 20%;
+    }
+    
+    form > button {
+        font-size: 1.5vw;
+        padding: 2.5% 10%;
+    }
+
+    form > input::placeholder, form > textarea::placeholder, form > input, form > textarea {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 450px) {
+    form > input::placeholder, form > textarea::placeholder, form > input, form > textarea {
+        font-size: 3vw;
+    }
+    
+    form > button {
+        font-size: 2.5vw;
+    }
 }
