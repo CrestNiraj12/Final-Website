@@ -39,7 +39,7 @@ if ($(window).width() >= 1000) {
         if (top >= 100 && top < $("#section-1").offset().top && $(".nav2").css("display") == "none") {
             $(".stickNav").css({transform: "scale(1)", opacity: "1", zIndex: "999"});
         } else if (top > $("#section-1").offset().top && top < previousScroll && $(".nav2").css("display") == "none") {
-            $(".stickNav").css({height: "12vh", transform: "scale(1)", opacity: "1", zIndex: "999"}); 
+            $(".stickNav").css({height: "90px", transform: "scale(1)", opacity: "1", zIndex: "999"}); 
         } else {
             if (top < 100) {
                 $(".stickNav").css({transform: "scaleY(1.5)", opacity: "0", zIndex: "-1"});

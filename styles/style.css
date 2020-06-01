@@ -44,7 +44,11 @@
     font-family: "Baloo";
     src: url(../fonts/Baloo-Bold.ttf) format("TrueType");
     font-weight: bold;
+}
 
+:root{
+    scrollbar-color: #96cdef #263133 !important;
+    scrollbar-width: thin !important;
 }
 
 ::-webkit-scrollbar {
