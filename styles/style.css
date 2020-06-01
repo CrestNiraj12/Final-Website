@@ -44,6 +44,24 @@
     font-family: "Baloo";
     src: url(../fonts/Baloo-Bold.ttf) format("TrueType");
     font-weight: bold;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #263133;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 200px;
+    background: #96cdef;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
 }
 
 body {
