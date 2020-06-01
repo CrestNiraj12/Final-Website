@@ -33,6 +33,8 @@ body {
 
 .container > h1 > span {
     color: #96cdef;
+    font-family: Montaga;
+    font-size: 2.75vw;
 }
 
 form {
