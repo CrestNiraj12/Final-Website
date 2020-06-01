@@ -88,12 +88,12 @@ $(".nav1 ul li:nth-child(3)").on({
 
 const onBtnHover = (e) => {
     $(e).css({cursor: "pointer", backgroundColor: "#96cdef"});
-    $(e + " a").css("color", "#000");
+    $(".btn-wrapper > a > " + e).css("color", "#000");
 };
 
 const onBtnLeave = (e) => {
     $(e).css("background-color", "transparent");
-    $(e + " a").css("color", "#96cdef");
+    $(".btn-wrapper > a > " + e).css("color", "#96cdef");
 };
 
 $(".btn").on({
