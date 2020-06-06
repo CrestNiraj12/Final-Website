@@ -1,5 +1,5 @@
 body {
-    background: url(../images/pattern-bg.jpg) #363636;
+    background: url(../images/pattern-bg.jpg) var(--contact-bg);
     background-size: cover;
     background-blend-mode: color-burn;
 }
@@ -23,7 +23,7 @@ body {
     height: 30px;
     transition: padding 1.25s ease-in-out;
     padding-top: 25px;
-    color: #96cdef;
+    color: var(--contact-color);
 }
 
 .container > h1 {
@@ -32,7 +32,7 @@ body {
 }
 
 .container > h1 > span {
-    color: #96cdef;
+    color: var(--contact-color);
     font-family: Montaga;
     font-size: 2.75vw;
 }

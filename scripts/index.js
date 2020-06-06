@@ -75,25 +75,14 @@ if ($(window).width() >= 700) {
     });
 }
 
-$(".nav1 ul li:nth-child(3)").on({
-    mouseenter: () => {
-        $(".nav1 ul li:nth-child(3)").css({cursor: "pointer", backgroundColor: "#fff"});
-        $(".nav1 ul li:nth-child(3) a").css("color", "#000");
-    },
-    mouseleave: () => {
-        $(".nav1 ul li:nth-child(3)").css("background-color", "transparent");
-        $(".nav1 ul li:nth-child(3) a").css("color", "#fff");
-    }
-});
-
 const onBtnHover = (e) => {
-    $(e).css({cursor: "pointer", backgroundColor: "#96cdef"});
+    $(e).css({cursor: "pointer", backgroundColor: "var(--ui-bg2)"});
     $(".btn-wrapper > a > " + e).css("color", "#000");
 };
 
 const onBtnLeave = (e) => {
     $(e).css("background-color", "transparent");
-    $(".btn-wrapper > a > " + e).css("color", "#96cdef");
+    $(".btn-wrapper > a > " + e).css("color", "var(--ui-bg2)");
 };
 
 $(".btn").on({
@@ -108,12 +97,12 @@ $(".btn2").on({
 
 $(".footer > p ").on ({
     mouseenter: () => {
-        $(".footer > p ").css({cursor: "pointer", backgroundColor: "#96cdef", color: "#1a1a1a"});
+        $(".footer > p ").css({cursor: "pointer", backgroundColor: "var(--ui-bg2)", color: "#1a1a1a"});
         $(".footer > img").css({display: "none"});
         $(".footer > p > span > img").css("visibility", "visible").animate({top: "0.6vh"}, 100);
     },
     mouseleave: () => {
-        $(".footer > p ").css({backgroundColor: "transparent", color: "#96cdef"});
+        $(".footer > p ").css({backgroundColor: "transparent", color: "var(--ui-bg2)"});
         $(".footer > img").css({display: "block"});
         $(".footer > p > span > img").css({visibility: "hidden", top: "3vh"});
     },

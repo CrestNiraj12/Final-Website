@@ -4,9 +4,9 @@
     right: 0;
     left: 0;
     height: 70vh;
-    background: no-repeat center center url(../images/footer.jpg) #263133;
+    background: no-repeat center center url(../images/footer.jpg) var(--footer-blend);
     background-size: cover;
-    background-blend-mode: luminosity;
+    background-blend-mode: multiply;
     margin: 0;
     overflow: hidden;
 }
@@ -44,11 +44,11 @@
 
 .footer > p {
     right: 10%;
-    color: #96cdef;
+    color: var(--ui-bg2);
     font-family: "Lobster";
     font-size: 1vw;
     letter-spacing: 1px;
-    border: 1px solid #96cdef;
+    border: 1px solid var(--ui-bg2);
     display: inline-block;
     padding: 1.5vh 5vh 1.5vh 5vh;
     margin-top: 10vh;
@@ -76,11 +76,9 @@
 }
 
 @media (max-width: 999px) {
-    
     .footer span a {
         font-size: 0.6em;
     }
-
     .footer {
         background-image: url(../images/footer2.jpg);
     }

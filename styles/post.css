@@ -4,7 +4,7 @@
 }
 
 .header {
-    background: url(../images/bg2.jpg) #578bac;
+    background: url(../images/bg2.jpg) var(--ui-bg2);
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -96,7 +96,7 @@
 .content > h2 {
     font-family: "Lalezar";
     letter-spacing: 2px;
-    color: #96cdef;
+    color: var(--ui-bg2);
 }
 
 .content > p {
@@ -104,11 +104,11 @@
     font-weight: normal;
     letter-spacing: 1px;
     line-height: 1.5;
-    color: #fff;
+    color: var(--color);
 }
 
 .content > p > a {
-    color: #b7eef6;
+    color: var(--link);
 }
 
 .content > p > a:hover, .content > p > a:active, .content > p > a:focus {
@@ -131,7 +131,7 @@
 
 .related {
     margin-bottom: 10vh;
-    border: 2px solid #e6e6e6;
+    border: 2px solid var(--color);
 }
 
 .more-info {
@@ -144,10 +144,10 @@
     font-family: "Lalezar";
     margin: 0;
     font-size: 2vw;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid var(--color);
     padding: 1%;
-    background: #e6e6e6;
-    color: #3d3d3d;
+    background: var(--color);
+    color: var(--related-color);
     text-align: center;
     letter-spacing: 1px;
 }
@@ -173,8 +173,9 @@
 .related li::before {
     content: '';
     position: absolute;
-    background: url(../images/pencil.png);
+    background: url(../images/pencil.png) var(--color);
     background-size: cover;
+    background-blend-mode: difference;
     width: 15px;
     height: 15px;
     margin-top: 5px;
@@ -196,7 +197,7 @@
 
 .related a {
     font-family: "Baloo";
-    color: #e6e6e6;
+    color: var(--color);
     text-decoration: none;
     letter-spacing: 1px;
     line-height: 1.5;
@@ -220,7 +221,7 @@
 }
 
 .more-info a:active, .more-info a:hover, .more-info a:focus {
-    color: #e6e6e6;
+    color: var(--color);
     text-decoration: underline;
 }
 
@@ -238,7 +239,7 @@ form {
 fieldset {
     background-color: #3d3d3d;
     padding: 5% 2% 5% 2%;
-    border: 2px dashed #fff;
+    border: 2px dashed var(--color);
 }
 
 legend {
@@ -407,7 +408,7 @@ input[type="submit"]:hover {
     
     .title {
         font-size: 7vw;
-        margin: 18% 0;
+        margin: 16% 0;
     }
     
     .align-right {

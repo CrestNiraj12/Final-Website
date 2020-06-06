@@ -25,7 +25,7 @@
                 font-weight: normal;
                 letter-spacing: 1px;
                 line-height: 1.5;
-                color: #fff;
+                color: var(--color);
             }
 
             .code {
@@ -61,13 +61,18 @@
                     <div class="navLogo">
                         <a href="../../index.html"><img src="../../images/logo.png" alt="logo"></a>
                     </div>
-                    <div>
-                        <ul>
-                            <li><a href="../../index.html" id="nav1-1">Home</a></li>
-                            <li><a href="../contact.html" id="nav1-2">Contact</a></li>
-                            <li><a href="#" id="nav1-3">Portfolio</a></li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li><a href="../../index.html" id="nav1-1">Home</a></li>
+                        <li><a href="../contact.html" id="nav1-2">Contact</a></li>
+                        <li><a href="#" id="nav1-3">Portfolio</a></li>
+                        <li class="has-dropdown">
+                            <a class="theme" href="#"></a>
+                            <ul class="dropdown">
+                                <li id="dark">Dark Theme</li>
+                                <li id="light">Light Theme</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </nav>
                 <nav class="stickNav">
                     <div class="navLogo">
@@ -92,13 +97,19 @@
                         <li><a href="../../index.html" id="nav2-1">Home</a></li>
                         <li><a href="../contact.html" id="nav2-2">Contact</a></li>
                         <li><a href="#" id="nav2-3">Portfolio</a></li>
+                        <li>
+                            <ul class="themes">
+                                <li id="dark2">Dark</li>
+                                <li id="light2">Light</li>
+                            </ul>
+                        </li>
                     </ul>
                     <div class="info">
                         <a href="https://www.facebook.com/crestniraz" target="_blank"><img src="../../images/fb.svg" alt="facebook logo icon"></a>
                         <a href="https://www.instagram.com/crestniraz" target="_blank"><img src="../../images/insta.svg" alt="instagram logo icon"></a>
                         <a href="https://www.github.com/crestniraj12" target="_blank"><img src="../../images/github.svg" alt="github logo icon"></a>
                         <hr>
-                        <p>Niraj Shrestha<br><br>Buddhanagar, Kathmandu<br><br></p>
+                        <p>Niraj Shrestha<br>Buddhanagar, Kathmandu<br></p>
                         <hr>
                         <div class="contact">
                             <a href="mailto:crestniraj@gmail.com" target="_blank"><img src="../../images/mail.svg" alt="mail icon"><p>crestniraj@gmail.com</p></a>
@@ -428,8 +439,8 @@
                 <span><a href="#">&copy; 2020 Niraj Shrestha</a></span>
             </div>
         </div>
-        <script src="../../scripts/nav.js"></script>
-        <script src="../../scripts/main.js"></script>
-        <script src="../../scripts/post.js"></script>
+        <script defer src="../../scripts/nav.js"></script>
+        <script defer src="../../scripts/main.js"></script>
+        <script defer src="../../scripts/post.js"></script>
     </body>
 </html>
