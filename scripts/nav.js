@@ -1,6 +1,42 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
+$(window).on("load", () => {
+    const light = localStorage.getItem("light");
+    
+    function lightOn() {
+        $(":root").css("--box-color-dark", "transparent");
+        $(":root").css("--box-color-light", "#fff");
+    }
+    
+    function lightOff() {
+        $(":root").css("--box-color-light", "transparent");
+        $(":root").css("--box-color-dark", "#fff");
+    }
+    
+    if (light) {
+        if (light == "on") {
+            $("body").addClass("light");
+            lightOn();
+        }
+        else {
+            $("body").removeClass("light");
+            lightOff();
+        }
+    }
+    
+    $("#dark, #dark2").click(() => {
+        $("body").removeClass("light");
+        localStorage.setItem("light", "off");
+        lightOff();
+    });
+
+    $("#light, #light2").click(() => {
+        $("body").addClass("light");
+        localStorage.setItem("light", "on");
+        lightOn();
+    });
+});
 
 $(".nav1 > ul > li:nth-child(3)").on({
     mouseenter: () => {
@@ -75,25 +111,4 @@ $(".close-icon").on("click", () => {
 
 $(".nav2 > ul > li > a").on("click", function() {
     $(this).addClass("active-nav2");
-});
-
-const light = localStorage.getItem("light");
-
-if (light == "on") $("body").addClass("light");
-else $("body").removeClass("light");
-
-let root = document.documentElement;
-
-$("#dark, #dark2").click(() => {
-    $("body").removeClass("light");
-    localStorage.setItem("light", "off");
-    root.style.cssText = '--box-color-light: transparent';
-    root.style.cssText = '--box-color-dark: #000';
-});
-
-$("#light, #light2").click(() => {
-    $("body").addClass("light");
-    localStorage.setItem("light", "on");
-    root.style.cssText = '--box-color-dark: transparent';
-    root.style.cssText = '--box-color-light: #fff';
 });

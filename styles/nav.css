@@ -37,7 +37,7 @@
 
 .nav1 > ul > li {
     padding: 1vh 0;
-    height: fit-content;
+    height: max-content;
 }
 
 .nav1 > ul > li:nth-child(3) {
@@ -116,7 +116,7 @@
 }
 
 #dark:hover, #dark2:hover {
-    --box-color-dark: #000;
+    --box-color-dark: #fff;
 }
 
 #light:hover, #light2:hover {

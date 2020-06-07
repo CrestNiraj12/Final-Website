@@ -60,8 +60,7 @@
     --nav-color: var(--color);
     --related-color: #000; 
     --link: var(--ui-bg2);
-    scrollbar-color: #96cdef #263133 !important;
-    scrollbar-width: thin !important;
+    scrollbar-width: thin !important
 }
 
 .light {
@@ -97,6 +96,10 @@
     background: var(--color);
 }
 
+* {
+    transition: background 1s ease-in-out, color 1s ease-in-out;
+}
+
 body {
     overflow: hidden;
     font-family: "Roboto";
@@ -106,7 +109,6 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    transition: background 1s ease-in-out, color 1s ease-in-out;
 }
 
 /* Preloader */
